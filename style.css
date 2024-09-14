@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Fascinate+Inline&family=Nerko+One&family=Protest+Guerrilla&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+}
+
+header{
+    width: 100%;
+    margin-bottom: 45px;
+}
+
+/* navbar */
+navbar{
+  margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem;
+}
+.logo{
+    font-size: 2rem; 
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(9, 81, 9);
+}
+.login-box{
+ font-size: 1.5rem;
+ height: 37px; 
+}
+.search-box{
+       width: 100%;    
+   display: flex;
+   justify-content: center;
+ }
+#search{
+ background-color: rgb(9, 81, 9);
+  color: white;
+  align-self: center;
+  height: 31px;
+  border-radius: 6px;
+  width: 40%;
+  padding: 2px 10px;
+}
+.nav-items ul li{
+ font-size: 20px;
+    margin: 0px 0.8rem;
+    cursor: pointer;
+    list-style: none;
+}
+.nav-items ul{
+  display: flex;
+}
+.nav-items ul li a{
+    background-color: rgb(13, 56, 13);
+    color: white;
+    text-decoration: none;
+    font-family: "Source Sans 3", sans-serif;
+    border-radius: 6px 0px 6px 0px;
+    font-size: 16px;
+    padding: 8px;
+    transition: all 0.2s ease-in-out;
+    &:hover{
+        background-color: grey;
+        color: rgb(13, 56, 13);
+        scale: 1.4;
+    }
+}
+
+/* slider */
+.slider{
+    width: 100%;
+    margin-bottom: 15px;
+    animation: slide 20s infinite ;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background-color: rgb(239, 239, 152);
+}
+
+@keyframes slide {
+    0%{
+        background-image:url(images/1.jpg)
+    }
+    20%{
+        background-image: url(images/7.png);
+    }
+    40%{
+       background-image: url(images/4.jpg);
+    }
+    60%{
+       background-image: url(images/10.png);
+    }
+    80%{
+        background-image: url(images/6.png);
+       
+    }
+    100%{
+        background-image: url(images/2.jpg);
+    }
+    
+}
+.img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+} 
+.text-box h1{   
+    font-size: 60px;
+    font-family: "Protest Guerrilla", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.text-box{
+    color:rgb(210, 144, 21);
+    height: 90%;
+    width: 30%;
+    padding: 25px;
+}
+.text-box .btn{
+background-color: rgb(10, 52, 10);
+color: white;
+}
+span{
+    color: rgb(11, 60, 11);
+}
+
+/* new-arrivals */
+.new-arrival-heading ,.her-collection-heading,.classic-heading{
+    display: inline;
+    text-align: center;
+    margin-bottom: 20px;              
+}
+.new-arrival-heading h1{
+    margin-bottom: 10px;
+}
+
+.new-arrival-items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px;
+    margin: 20px 10px;
+    background-color: rgb(8, 53, 8);
+}
+.size{
+  padding: 20px;
+  height: 200px;
+  width: 200px;
+  margin: 12px;
+  border-radius: 7px;
+  transition:  0.15s ease-in-out;
+  &:hover{
+    scale: 1.05;
+  }
+}
+.item1{
+background-image: url(images/15.png);
+}
+.item2{
+  background-image: url(images/16.png);
+  }
+.item3{
+    background-image: url(images/17.png);
+    }
+.item4{
+      background-image: url(images/18.png);
+}
+.item-box{
+  background-color:rgb(221, 206, 178);
+  text-align: center;
+  
+}
+/* container */
+.container{
+  background-color: black;
+  height: 65vh;
+  width: 100%;
+  margin: 30px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.inner-container{
+  width: 90%;
+  height: 90%;
+  box-shadow: 10px silver;
+  border-radius: 10px;
+  display: flex;
+}
+.video-box{
+  width: 70%;
+}
+video{
+  height: 100%;
+  width: 100%;
+}
+.text2{
+  width: 30%;
+  padding: 35px;
+color: rgb(230, 218, 203);
+  font-size: 40px;
+  font-family: "Protest Guerrilla", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.text2 span{
+  color: rgb(69, 121, 137);
+}
+
+/*men's wear*/
+
+.classic-spotlight ,.her-collection{
+  display: flex;
+  padding: 10px;
+  margin: 20px 10px;
+  overflow: scroll;
+}
+.pic1{
+  background-image: url(images/11.png);
+}
+.pic2{
+  background-image: url(images/19.png);
+}
+.pic3{
+  background-image: url(images/13.png);
+}
+.pic4{
+  background-image: url(images/12.png);
+}
+.pic5{
+  background-image: url(images/21.png);
+}
+.pic6{
+  background-image: url(images/19.png);
+}
+.pic7{
+  background-image: url(images/11.png);
+}
+.btn{
+  margin: 5px;
+  background-color: black;
+  font: 10px;
+  border-radius: 5px;
+  height: 30px;
+  width: 90px;
+  color: white;
+  transition: 0.15s ease-in-out;
+  &:hover{
+    scale: 1.1;
+  }
+}
+/*women's-wear */
+.her-section{
+  background-color: rgb(83, 11, 52);
+  margin: 3rem 0px;
+  padding: 30px 100px;
+}
+.about-template-box{
+  width: 97%;
+  height: 70vh;
+  background-color: pink;
+  display: flex;
+  border-radius: 20px 0px;
+  overflow: hidden;
+}
+.about{
+height: 100%;
+width: 50%;
+padding: 30px;
+border-radius: 10px;
+border-radius: 20px 0px;
+}
+.about h1{
+  margin: 30px;
+  color: rgb(83, 11, 52);
+}
+.her-collection-heading h1{
+  margin-bottom: 10px;
+  color: white;
+  margin: 20px;
+  font-size: 40px;
+}
+.her-template{
+  height: 100%;
+  width: 50%;
+border-radius: 20px 0px;
+  background-image: url(images/22.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+}
+.her-item h4,.her-item p{
+  color: white;
+}
+.sneaker1{
+  background-image: url(images/24.png);
+}
+.sneaker2{
+  background-image: url(images/25.png);
+}
+.sneaker3{
+  background-image: url(images/26.png);
+}
+.sneaker4{
+  background-image: url(images/28.png);
+}
+.sneaker5{
+  background-image: url(images/29.png);
+}
+/* footer */
+footer{
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 40px;
+  padding: 50px 20px 70px;
+}
+.liststyle ul li{
+  list-style: none;
+}
